@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="20dp"
+    android:paddingTop="5dp"
+    android:background="@drawable/dialog_bg"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/close"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:paddingBottom="10dp"
+        android:layout_gravity="right"
+        android:src="@drawable/ic_close" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="40dp"
+                        android:orientation="horizontal">
+
+                        <EditText
+                            android:id="@+id/input_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/border"
+                            android:hint="Enter Name"
+                            android:singleLine="true"
+                            android:textColor="@android:color/black"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="40dp"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="10dp">
+
+                        <EditText
+                            android:id="@+id/input_mobile"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/border"
+                            android:hint="Enter Mobile"
+                            android:maxLength="10"
+                            android:inputType="numberSigned"
+                            android:textColor="@android:color/black"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/input_address"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/border"
+                    android:hint="Enter Address"
+                    android:inputType="textMultiLine"
+                    android:textColor="@android:color/black"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+                <RadioGroup
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="1"
+                    android:id="@+id/radioGroup"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/radioButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="true"
+                        android:text="Grhasthee"
+                        android:textSize="25dp" />
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Student"
+                        android:id="@+id/radioButton2"
+                        android:checked="false"
+                        android:layout_marginLeft="20dp"
+                        android:textSize="25dp" />
+                </RadioGroup>
+
+            </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="52dp"
+                        android:layout_marginTop="20dp"
+                        android:orientation="horizontal">
+
+
+                        <android.support.v7.widget.AppCompatButton
+                            android:id="@+id/save"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:background="@drawable/border"
+                            android:text="SAVE AND NEXT"
+                            android:textColor="@android:color/white"
+                            android:textStyle="bold"
+                            android:layout_gravity="left"
+                            android:layout_toLeftOf="@+id/close"
+                            app:backgroundTint="@android:color/holo_orange_dark" />
+
+                    </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
